@@ -1,2 +1,8 @@
 # Projeto-IF686-2023
 Threads em Haskell e Lua
+
+1. A máquina de refrigerante do Rei do Hambuguer, funciona de uma forma bastante simples. A todo momento, existem clientes enchendo seus copos de refrigerantes, sendo estes de 3 tipos: **Pepise-Cola, Guaraná Polo Norte e Guaraná Quate**. Cada cliente leva **1000 ms** para encher seu copo com o refrigerante. Porém a maquina só pode ser utilizada **por uma pessoa por vez,** então se um cliente está enchendo o copo com Guaraná Quate, o outro cliente que deseja Guaraná Polo Norte tem que aguardar a máquina estar disponível para ele. Cada cliente enche seu copo com **300 ml** de refrigerante e a máquina suporta apenas **2000 ml** de cada refrigerante, ou seja, 6000 ml no total. Para evitar transtorno, sempre que um refrigerante possuir menos que **1000 ml**, ele é reposto com um refil de **1000 ml**. Para repor o refrigerante, a máquina **não pode estar sendo utilizada por nenhum cliente e demora 1500 ms** para reposição. Dado o número de clientes que irão estar o tempo todo querendo o refrigerante Pepise-Cola, Guarana Polo Norte e Guaraná Quate, implemente a máquina de refrigerante do Rei do hambuguer utilizando o conceito de **Variáveis Mutáveis** em Haskell. Sempre que alguém estiver utilizando a máquina de refrigerante, apresente as seguinte informações.
+
+> Caso seja para abastecer a máquina: **"O refrigerante X foi reabastecido com 1000 ml, e agora possui Y ml"**, onde *X* é o nome do refrigerante e *Y* a quantidade que possui do mesmo após ele ser reabastecido.
+
+> Caso seja um cliente, informe: **"O cliente N do refrigerante X está enchenco seu copo"**, onde *N* é o número do cliente para seu respectivo refrigerante e *X* o nome do refrigerante.
